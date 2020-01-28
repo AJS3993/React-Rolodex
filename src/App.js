@@ -63,5 +63,3 @@ const filteredMonsters = monsters.filter(monster =>
 }
 
 export default App;
-
-//hi
