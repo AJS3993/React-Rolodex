@@ -37,7 +37,7 @@ handleChange(e) {
     //destructure: pulling values from state object
     const { monsters, searchField } = this.state
     
-    // could also be written as:
+    // could also be written as this:
 
     // const monsters = this.state.monsters;
     // const searchField = this.state.searchField
