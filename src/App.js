@@ -14,6 +14,7 @@ class App extends Component{
       monsters: [],
       searchField: ''
     };
+    
 //so handleChange understands what this is referring to
     this.handleChange=this.handleChange.bind(this)
   }
@@ -25,6 +26,7 @@ componentDidMount(){
   .then(response => response.json())
   .then(users => this.setState({monsters: users}))
 }
+
 
 handleChange(e) {
   this.setState({searchField: e.target.value})
@@ -48,9 +50,9 @@ const filteredMonsters = monsters.filter(monster =>
     return (
       <div className="App">
         
-<h1>Monsters Rolodex</h1>
+<h1>React Rolodex</h1>
       <SearchBox
-      placeholder='search monsters'
+      placeholder='search employees'
       handleChange ={this.handleChange}
       />
     
